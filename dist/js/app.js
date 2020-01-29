@@ -1,6 +1,7 @@
 const buttons = document.querySelectorAll('button');
 const modalOutter = document.querySelector('.modal-outter');
 const modalInner = document.querySelector('.modal-inner');
+const heading = document.querySelector('heading');
 
 function handleCardButtonClick(event) {
   const button = event.target;
@@ -42,3 +43,5 @@ window.addEventListener('keydown', event => {
 buttons.forEach(button => {
   button.addEventListener('click', handleCardButtonClick);
 });
+
+//
