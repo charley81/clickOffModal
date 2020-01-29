@@ -26,6 +26,13 @@ function closeModal() {
   modalOutter.classList.remove('open');
 }
 
+modalOutter.addEventListener('click', event => {
+  const isOutSide = event.target.closest('.modal-inner');
+  if (!isOutSide) {
+    modalOutter.classList.remove('open');
+  }
+});
+
 window.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     closeModal();
