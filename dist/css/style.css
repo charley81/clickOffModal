@@ -62,3 +62,7 @@ button {
 .modal-paragraph {
   display: none;
 }
+
+.modal-paragraph.show {
+  display: block;
+}
