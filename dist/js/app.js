@@ -8,17 +8,22 @@ function handleCardButtonClick(event) {
   const modalParagraph = card.querySelector('.modal-paragraph').textContent;
   const name = card.querySelector('.name').textContent;
   const imgSrc = card.querySelector('img').src;
-  console.log(modalParagraph);
 
   modalInner.innerHTML = `
-    <img src='${imgSrc}' alt='${name}' />
+    <img width='200px' height='200px' src='${imgSrc.replace(
+      '200',
+      '400'
+    )}' alt='${name}' />
     <h2>${name}</h2>
     <p>${modalParagraph}</p>
     `;
 
   // open modal
   modalOutter.classList.add('open');
-  console.log(modalParagraph);
+}
+
+function closeModal() {
+  modalOutter.classList.remove('open');
 }
 
 buttons.forEach(button => {

@@ -46,18 +46,25 @@ button {
   pointer-events: all;
 }
 
+.modal-outter.open img {
+  width: 100%;
+}
+
 .modal-inner {
   display: flex;
   background: #fff;
   padding: 1rem;
-  min-width: 400px;
+  max-width: 400px;
   text-align: center;
   font-size: 1.5rem;
-  min-height: 400px;
+  max-height: 800px;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+  flex-direction: column;
 }
+
+
 
 .modal-paragraph {
   display: none;
