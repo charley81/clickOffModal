@@ -19,7 +19,7 @@ img {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
 }
@@ -33,16 +33,24 @@ button {
   background: #333;
   color: #fff;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
 }
 
 heading {
   background: #333;
   color: #fff;
   padding: 1rem;
-  max-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -61,6 +69,11 @@ heading {
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
   border-radius: 3px;
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
 }
 
 .modal-outter {
@@ -128,6 +141,7 @@ heading {
   align-items: center;
   font-size: 1.1rem;
   max-height: 50px;
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 500px) {
