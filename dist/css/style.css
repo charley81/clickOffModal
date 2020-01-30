@@ -6,7 +6,7 @@
 html,
 body {
   display: grid;
-  height: 100vh;
+
   font-family: 'Montserrat', sans-serif;
   color: #333;
   font-size: 1.1;
@@ -42,6 +42,8 @@ button:hover {
   color: #333;
   border: 1px solid #333;
 }
+
+
 
 heading {
   background: #333;
@@ -145,9 +147,22 @@ heading {
 }
 
 @media only screen and (min-width: 500px) {
-  .cards {
+  /* .cards {
     padding: 1rem;
     justify-content: center;
     align-items: center;  
+  } */
+}
+@media only screen and (min-width: 1300px) {
+  .wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+  }
+
+  .card {
+    max-height: 400px;
   }
 }
+
